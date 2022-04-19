@@ -4,17 +4,34 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>SpringSecurityDemo</artifactId>
+    <groupId>fr.afpa.springsecurity.demo</groupId>
+    <artifactId>SpringSecurityDemoTest</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <springframework.version>5.0.2.RELEASE</springframework.version>
+        <springframework.version>5.3.13</springframework.version>
+        <springsecurity.version>5.6.0</springsecurity.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
+        <!-- Spring Security web -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${springsecurity.version}</version>
+        </dependency>
+
+        <!-- Spring Security config -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${springsecurity.version}</version>
+        </dependency>
+
+
+
         <!--  Spring MVC support  -->
         <dependency>
             <groupId>org.springframework</groupId>
